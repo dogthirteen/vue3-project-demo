@@ -26,7 +26,7 @@ const router = createRouter({
           path: 'index',
           name: 'map',
           meta: { title: '地图', icon: 'Location' },
-          component: () => import('../views/map.vue')
+          component: () => import('../views/map/index.vue')
         }
       ]
     },

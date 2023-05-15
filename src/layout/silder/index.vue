@@ -48,7 +48,7 @@
 
 <script setup>
 import variables from '@/styles/variables.module.scss'
-import { computed, defineComponent, defineProps } from 'vue'
+import { computed, defineComponent } from 'vue'
 import { useRouter } from 'vue-router'
 import Icon from '@/components/Icon/Icon.vue'
 defineProps({
