@@ -62,7 +62,7 @@ let activeMenu = computed(() => {
 })
 
 let defaultApeneds = computed(() => {
-  console.log('activeMenu :>> ', activeMenu)
+  // console.log('activeMenu :>> ', activeMenu)
   let first = activeMenu.value.split('/')[1] || ''
   return [`/${first}`]
 })

@@ -10,5 +10,6 @@ export const useLayoutStore = defineStore('layout', {
     handleToogle() {
       this.isCollapse = !this.isCollapse
     }
-  }
+  },
+  persist: true
 })

@@ -9,11 +9,12 @@ const router = createRouter({
       path: '/',
       component: Layout,
       redirect: '/todoList',
+      name: 'admin',
       children: [
         {
           path: 'todoList',
           name: 'todoList',
-          meta: { title: 'todoList', icon: 'Document' },
+          meta: { title: '首页', icon: 'Document' },
           component: () => import('../views/todoList.vue')
         }
       ]
@@ -21,10 +22,11 @@ const router = createRouter({
     {
       path: '/map',
       component: Layout,
+      name: "map",
       children: [
         {
           path: 'index',
-          name: 'map',
+          name: 'chinaMap',
           meta: { title: '地图', icon: 'Location' },
           component: () => import('../views/map/index.vue')
         }
@@ -33,7 +35,8 @@ const router = createRouter({
     {
       path: '/chart',
       component: Layout,
-      meta: { title: 'chart', icon: 'Histogram' },
+      meta: { title: '图表', icon: 'Histogram' },
+      redirect: '/chart/option1',
       children: [
         {
           path: 'option1',
