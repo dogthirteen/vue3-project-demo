@@ -33,6 +33,20 @@ const router = createRouter({
       ]
     },
     {
+      path: '/draggable',
+      component: Layout,
+      name: "draggable",
+      children: [
+        {
+          path: 'index',
+          name: 'draggable',
+          meta: { title: '拖拽', icon: 'Aim' },
+          component: () => import('../views/draggable/index.vue')
+        }
+      ]
+    },
+
+    {
       path: '/chart',
       component: Layout,
       meta: { title: '图表', icon: 'Histogram' },
