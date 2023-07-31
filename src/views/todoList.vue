@@ -1,6 +1,6 @@
 <template>
   <div class="container card">
-    <button @click="handelAdd">新增一条</button>
+    <el-button type="primary" @click="handelAdd">新增一条</el-button>
     <div class="table">
       <div class="thead">
         <div class="tr">

@@ -102,10 +102,10 @@ function handleDeleteTag(item, index) {
   }
   .active-tag-item {
     color: #fff;
-    background-color: #0094ff;
-    border-color: #0094ff;
+    background-color: var(--el-color-primary);
+    border-color: var(--el-color-primary);
     &:hover {
-      background-color: #0094ff;
+      background-color: var(--el-color-primary);
     }
   }
 }
