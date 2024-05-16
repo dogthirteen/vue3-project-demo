@@ -44,12 +44,12 @@ let sideClass = computed(() => {
   }
   .app-container {
     position: relative;
-    height: calc(100vh - #{$headerHieght});
+    height: calc(100vh - #{$headerHeight} - #{$breadcrumbHeight});
     padding: 20px 24px;
     overflow-x: hidden;
   }
   .header-container {
-    height: $headerHieght;
+    height: $headerHeight;
     border-bottom: 1px solid #ccc;
     background-color: var(--el-bg-color);
     z-index: 10;

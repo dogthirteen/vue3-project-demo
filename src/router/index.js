@@ -45,6 +45,19 @@ const router = createRouter({
         }
       ]
     },
+    {
+      path: '/pdf',
+      component: Layout,
+      name: "pdf",
+      children: [
+        {
+          path: 'index',
+          name: 'pdfView',
+          meta: { title: 'PDF预览', icon: 'Aim' },
+          component: () => import('../views/pdf/index.vue')
+        }
+      ]
+    },
 
     {
       path: '/chart',

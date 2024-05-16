@@ -11,7 +11,8 @@ $subMenuHover: #001528;
 
 $sideBarWidth: 210px;
 
-$headerHieght: 60px;
+$headerHeight: 60px;
+$breadcrumbHeight: 34px;
 :export {
   menuText: $menuText;
   menuActiveText: $menuActiveText;
@@ -21,5 +22,6 @@ $headerHieght: 60px;
   subMenuBg: $subMenuBg;
   subMenuHover: $subMenuHover;
   sideBarWidth: $sideBarWidth;
-  headerHieght: $headerHieght;
+  headerHeight: $headerHeight;
+  breadcrumbHeight: $breadcrumbHeight;
 }
